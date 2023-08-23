@@ -1,0 +1,111 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(240, 240, 240);
+}
+
+@font-face {
+    font-family: 'TicTacToe'; /* Name the font */
+    src: url('/TicTacToe/DiloWorld-mLJLv.ttf') format('truetype'); /* Replace with the actual path to your font */
+  }  
+
+.title {
+    text-align: center;
+    font-family: 'TicTacToe';
+    font-size: 4em;
+}
+
+button {
+    background-color: rgb(91, 137, 210);
+    border: 6px solid black;
+    border-radius: 10px;
+  }
+
+button:hover {
+    background-color: rgb(143, 183, 252);
+    cursor: pointer;
+}
+
+#resetButton {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
+  box-sizing: border-box;
+  color: #121212;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 1 1 auto;
+  font-family: Inter,sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1;
+  margin-top: -30px;
+  margin-bottom: 15px;
+  outline: none;
+  padding: 1rem 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s,-webkit-box-shadow .2s;
+  white-space: nowrap;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#resetButton:hover {
+  box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
+}
+  
+.game-board {
+    width: 80vw; /* Set the width to 80% of the viewport width */
+    max-width: 600px; /* Set a maximum width */
+    min-width: 600px; /* Set a minimum width */
+    height: 80vw; /* Set the height to 80% of the viewport width */
+    max-height: 600px; /* Set a maximum height */
+    min-height: 600px; /* Set a minimum height */
+    margin: 0 auto;
+    background-color: #000000;
+    color: rgb(250, 227, 227);
+    border: 6px solid #0b0d0f;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+}
+  
+  .grid-row {
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 4em;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: black;
+  }
+  
+  .block {
+    border-radius: 6px;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 20em;
+  }
+  
+  .black {
+    color: black;
+    font-size: 1.5rem;
+    font-family: "Tictactoe";
+  }
+  
+  .white {
+    color: white;
+    font-size: 1.5rem;
+    font-family: "Tictactoe";
+  }
+  
+  #turn, #status {
+    padding-left: 70px;
+  }
